@@ -1,0 +1,1164 @@
+
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    overflow-x: hidden;
+    background-color: #cff8e9;
+}
+/* Green Button */
+.ctn{
+    padding: 8px 15px;
+    background: #218961;
+    border-radius: 30px;
+    color: whitesmoke;
+    margin: 10px;
+}
+/* Global */
+/* NavBar */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background:#0b4f33;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+    z-index: 2;
+}
+.nav-links{
+    float: right;
+    margin-right: 20px;
+    color: whitesmoke;
+    padding-top: 5px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    top:80px;
+    transition: all .5s;
+}
+.nav-links li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 8px;
+}
+.nav-links li a{
+    display:block;
+    color: whitesmoke;
+    transition:  0.3s;
+}
+.name{
+    font-family: 'Bonheur Royale', cursive;
+    font-size: 60px;
+    text-align: center;
+    color: whitesmoke;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    display: flex;
+    text-align: center;
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: -15px;
+    margin-left: 10px;
+    margin-right: -10px;
+    justify-content: left;
+}
+.ctb{
+    display: inline;
+    border: none;
+    background: #218961;
+    height: 30px;
+    width: 80px;
+    font-size: small;
+    text-decoration-color: whitesmoke;
+    color: whitesmoke;
+    background-position: center;
+    border-radius: 30px;
+    margin-top: -5px;
+    transition: background-color 0.3s;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.mctn{
+    color: whitesmoke;
+    font-size: small;
+    padding: 8px 15px;
+    background-color:#0b4f33;
+    border-radius: 30px;
+    border: none;
+    margin-top: -5px;
+    transition: background-color 0.3s;
+}
+.mctn:hover{
+    background-color:#218961;
+    text-decoration:solid;
+    color:#0a3329;
+}
+
+/* respensive mode button editing */
+/* Hamburger icon  */
+a.active,a:hover{
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.checkbtn {
+    display: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.burger-icon {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 80px;
+}
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+#check:checked + .checkbtn .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+#check:checked + .checkbtn .bar:nth-child(2) {
+    opacity: 0;
+}
+#check:checked + .checkbtn .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+/* hovers */
+.nav-links li a:hover{
+    color: #79c4a8;
+    font-weight: 100;
+    text-decoration: underline;
+}
+.ctb:hover{
+    background: #79c4a8;
+    border-radius: 30px;
+    text-decoration:solid;
+    color:#0a3329;
+}
+.ctn:hover{
+    color: #0a3329;
+    background-color: #79c4a8;
+}
+/* Home page */
+/* Welcome para and img index */
+.header-index{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/hfp.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-content h2 {
+    font-size: 4vmin;
+}
+.line {           /*Green line */
+    width: 150px;
+    height: 4px;
+    background:#218961;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1{
+    font-family: georgia;
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+/* About */
+.about-bg{
+    background-color:#b3f9df;
+    margin: 30px;    
+}
+.about-bg:hover{
+    background-color: #bdffe6;
+}
+.about{
+    position:relative;
+    text-align: center;
+    margin-top: 30px;
+}
+.about-para{
+    position:relative;
+    font-size:larger;
+    text-align: justify;
+    margin: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+/* offer */
+.offer-bg{
+    background-color:#b3f9df;
+    margin: 30px;
+}
+.offer-bg:hover{
+    background-color: #bdffe6;
+}
+.offer{
+    position:relative;
+    text-align: center;
+    margin-top: 20px;
+}
+/*uesd in home page and restaurant page */
+.row{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* home page images */
+.offer-img1{
+    width: 350px;
+    height: auto;
+    margin: 30px;
+    position: relative;
+    display: inline-block;
+    transition: transform .3s ease;
+}
+.offer-img2{
+    width: 350px;
+    height: auto;
+    margin: 30px;
+    position: relative;
+    display: inline-block;
+    transition: transform .3s ease;
+}
+.offer-img3{
+    width: 350px;
+    height: auto;
+    margin: 30px;
+    position: relative;
+    display: inline-block;
+    transition: transform .3s ease;
+}
+.circle li{
+    list-style-type: circle;
+}
+/* img hover */
+.offer-img1:hover{
+    transform: scale(1.1);
+}
+.offer-img2:hover{
+    transform: scale(1.1);
+}
+.offer-img3:hover{
+    transform: scale(1.1);
+}
+/* branches page */
+/* branche page header */
+.header-branches{
+    width: 100vw;
+    height: 30vh;
+    background-image: url(../images/header-img-2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-branches-content{
+    margin-bottom: 5px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-branches-content h1{
+    font-family: georgia;
+    font-size: 3vmin;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.branch-content{
+    display: list-item;
+}
+/* branch content */
+.branch-content{
+    background-color:#b3f9df;
+    margin: 30px; 
+}
+.branch-cafe-img,.branch-grill-img,.branch-beach-img,.branch-village-img{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+    transition: transform .3s ease;
+}
+.branch-cafe-img:hover{
+    transform: scale(1.1);
+}
+.branch-grill-img:hover{
+    transform: scale(1.1);
+}
+.branch-beach-img:hover{
+    transform: scale(1.1);
+}
+.branch-village-img:hover{
+    transform: scale(1.1);
+}
+.branch-cafelab,.branch-grill,.branch-beach-hotel,.branch-village-hotel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/* branch page map */
+.map{
+    margin-top: 20px;
+    cursor: pointer;
+}
+/* content area */
+.branch-content-1,.branch-content-2{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* branchers partitions */
+.branch-cafelab,.branch-grill{
+    margin: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.branch-beach-hotel,.branch-village-hotel{
+    margin: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+/* Hovers */
+.branch-cafelab:hover{
+    background-color: #cff8e9;
+    cursor: pointer;
+}
+
+.branch-grill:hover{
+    background-color: #cff8e9;
+    cursor: pointer;
+}
+.branch-beach-hotel:hover{
+    background-color: #cff8e9;
+    cursor: pointer;
+}
+
+.branch-village-hotel:hover{
+    background-color: #cff8e9;
+    cursor: pointer;
+}
+/* sub-headinds */
+.branch-sub-heading{
+    text-align: center;
+    font-size: large;
+    margin-bottom: 20px;
+}
+/* branch table */
+.branch-table-area{
+    background-color:#b3f9df;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+}
+.double-underline p{
+    text-decoration: underline;
+}
+.branch-table{
+    margin: 10px;
+    color:#0a3329;
+}
+.branch-table thead tr th{
+    padding:20px;
+}
+.branch-table tbody tr th{
+    padding: 20px;
+}
+.branch-table tfoot tr th{
+    padding: 20px;
+}
+table{
+	width: 600px;
+	box-shadow: -1px 12px 12px -6px rgba(19, 119, 79, 0.5);
+}
+table, td, th{
+	padding: 20px;
+	border: 1px solid rgb(0, 0, 0);
+	border-collapse: collapse;
+	text-align: center;
+	cursor: pointer;
+}
+td{
+	font-size: 18px;
+}
+th{
+	background-color: rgb(25, 85, 58);
+	color: white;
+}
+tr:nth-child(odd){
+	background-color:#79c4a8;
+}
+tr:nth-child(odd):hover{
+	background-color:#218961;
+	color: white;
+	transform: scale(1.1);
+	transition: transform 100ms ease-in;
+}
+tr:nth-child(even){
+	background-color:#b3f9df;
+}
+tr:nth-child(even):hover{
+	background-color:#79c4a8;
+	transform: scale(1.1);
+	transition: transform 100ms ease-in;
+}
+/* restaurant page */
+/* restaurant page header */
+.header-restaurant{
+    width: 100vw;
+    height: 30vh;
+    background-image: url(../images/header-img-3.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-restaurant-content{
+    margin-bottom: 5px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-restaurant-content h1{
+    font-family: georgia;
+    font-size: 3vmin;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* event navigation */
+.event-navi{
+    text-align: center;
+    background-color:#0b4f33;
+    padding: 30px;
+}
+/* events info */
+.events-bg{
+    background-color:#b3f9df;
+    margin: 30px;
+}
+.events-bg:hover{
+    background-color: #bdffe6;
+}
+.events-name{
+    position:relative;
+    text-align: center;
+    margin-top: 30px;
+}
+.ctn-2{
+    padding: 8px 15px;
+    background: #218961;
+    border-radius: 30px;
+    color: whitesmoke;
+    margin: 40px;
+}
+.ctn-2:hover{
+    color: #0a3329;
+    background-color: #79c4a8;
+}
+/* restaurant page event contents */
+.event-img1{
+    width: 400px;
+    height: auto;
+    margin: 30px;
+    display:inline-block;
+    transition: transform .3s ease;
+}
+.event-img2{
+    width: 400px;
+    height: auto;
+    margin: 30px;
+    display: inline-block;
+    transition: transform .3s ease;
+}
+/* img hover */
+.event-img1:hover{
+    transform: scale(1.1);
+}
+.event-img2:hover{
+    transform: scale(1.1);
+}
+.events-sub-name{
+    color: rgb(0, 0, 0);
+    font-size: large;
+}
+.rest-content{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.rest-content div h3{
+    margin-top: 20px;
+}
+.rest-content div p{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    font-size: large;
+    text-align: justify;
+}
+/* restaurant content area */
+.restaurant-bg{
+    background-color:#b3f9df;
+    margin: 30px;
+}
+.restaurant-bg:hover{
+    background-color: #bdffe6;
+}
+.restaurant{
+    position:relative;
+    text-align: center;
+    margin-top: 30px;
+}
+.restaurant-img1{
+    width: 350px;
+    height: auto;
+    margin: 30px;
+    position: relative;
+    display: inline-block;
+    transition: transform .3s ease;
+}
+.restaurant-img2{
+    width: 350px;
+    height: auto;
+    margin: 30px;
+    position: relative;
+    display: inline-block;
+    transition: transform .3s ease;
+}
+.restaurant-img3{
+    width: 350px;
+    height: auto;
+    margin: 30px;
+    position: relative;
+    display: inline-block;
+    transition: transform .3s ease;
+}
+/* img hover */
+.restaurant-img1:hover{
+    transform: scale(1.1);
+}
+.restaurant-img2:hover{
+    transform: scale(1.1);
+}
+.restaurant-img3:hover{
+    transform: scale(1.1);
+}
+.rest-para{
+    margin: 20px;
+}
+/* Adventure page */
+/* adventure page header */
+.header-adventure{
+    width: 100vw;
+    height: 30vh;
+    background-image: url(../images/header-img-4.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-restaurant-content{
+    margin-bottom: 5px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-restaurant-content h1{
+    font-family: georgia;
+    font-size: 3vmin;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* events info */
+.adventure-bg{
+    background-color:#b3f9df;
+    margin: 30px;
+}
+.adventure-bg:hover{
+    background-color: #bdffe6;
+}
+.adventure-name{
+    position:relative;
+    text-align: center;
+    margin-top: 30px;
+}
+.adventure-content{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+.adventure-cont-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.adventure-cont-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.adventure-text-1{
+    text-align: center;
+    padding-right: 60px;
+    margin: 30px;
+    line-height: 1.5;
+    font-size: medium;
+}
+.adventure-text-2{
+    text-align: center;
+    margin: 30px;
+    padding: 0px;
+    line-height: 1.5;
+    font-size: medium;
+}
+.adventure-text-1 h3,.adventure-text-2 h3{
+    margin: 20px;
+}
+.adventure-img1{
+    width: 400px;
+    height: auto;
+    margin: 30px;
+    display:inline-block;
+    transition: transform .3s ease;
+}
+.adventure-img2{
+    width: 400px;
+    height: auto;
+    margin: 30px;
+    display: inline-block;
+    transition: transform .3s ease;
+}
+/* img hover */
+.adventure-img1:hover{
+    transform: scale(1.1);
+}
+.adventure-img2:hover{
+    transform: scale(1.1);
+}
+/* Booking page */
+/* booking page header */
+.booking-bg{
+    width: auto;
+    height: auto;   
+    background-color: #b3f9df;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0px;
+    padding-top: 100px;
+}
+/*booking rooms & suits*/
+.header-booking-1{
+    width: 100vw;
+    height: 30vh;
+    background-image: url(../images/booking.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-booking-1-content{
+    margin-bottom: 5px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-booking-1-content h1{
+    font-family: georgia;
+    font-size: 3vmin;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* booking adventures */
+.header-booking-2{
+    width: 100vw;
+    height: 30vh;
+    background-image: url(../images/advencture-booking.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+.header-booking-2-content{
+    margin-bottom: 5px;
+    color: whitesmoke;
+    text-align: center;
+    margin-right: 150px;
+}
+.header-booking-2-content h1{
+    font-family: georgia;
+    font-size: 3vmin;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* forms background area */
+.form-bg{
+    background-color:#b3f9df;
+    margin-top: -100px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    padding-top: 50px;
+    padding-right: 100px; 
+    padding-bottom: 50px;
+    padding-left: 100px;
+    text-align: center;
+}
+.form-bg:hover{
+    background-color: #bdffe6;    
+}
+.form-bg h1{
+    text-align: center;
+    font-size: xx-large;
+    margin: 5px;
+}
+.form-bg form{
+    display: flex;
+    padding-top: 20px;
+    text-align: left;
+    font-size: larger;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+.form-info{
+    font-size: larger;
+    display: grid;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 40px;
+}
+/* Global */
+/* Footer styles */
+.footerinfo{
+    display: flex;
+    justify-content: space-between;
+    background-color: #0b4f33 ;
+    color: aliceblue;
+    width: auto;
+    height: 120px;
+}
+.flogo{
+    position: relative;
+    width: 200px;
+    padding: 0px;
+    margin: 10px;
+}
+.fname{
+    position: relative;
+    text-align: center;
+    color: whitesmoke;
+    margin: 30px;
+}
+.term-condition{
+    text-align: left;
+    align-content: center;
+    margin: 30px;
+}
+.info{
+    position: relative;
+    text-align: left;
+    margin: 30px;
+}
+.footerc{
+    text-align: center;
+    padding: 1rem;
+    background-color: #0a3329;
+    color: white;
+}
+/* Iphone device */
+@media only screen and (max-width:850px){
+    /* Globle */
+    .checkbtn{
+        display:block;
+        height: 8vh;
+        width: auto;
+        padding-left: 38vw;
+    }
+    a:hover{
+        background: none;
+        color: #218961;
+    }
+    .burger-icon{
+        padding-bottom: 50px;
+
+    }
+    a.active{
+        background: none;
+        color: #218961;
+    }
+    #check:checked ~ ul{
+        left: 0%;
+    }
+    /* logo globle */
+    .logo{
+        position:absolute;
+        left: auto;
+        margin-top: -18px;
+        margin-left: -10px ;
+        z-index: 1;
+    }
+    .name{
+        font-family: 'Bonheur Royale', cursive;
+        font-size: 45px;
+        text-align: center;
+        color: whitesmoke;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-links{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        text-align: center;
+        background: #0b4f33;
+        top: 80px;
+        left: -100%;
+        transition: all 0.5s ;
+        margin-top: -1px;
+    }
+    .nav-links li{
+        display: block;
+    }
+    .nav-links li a{
+        font-size: xx-large;
+    }
+    /* Home page */
+    /* about */
+    .about-para{
+        margin: 10px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    /* offer */
+    .branch-content-1,.branch-content-2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .offer-img1,.offer-img2,.offer-img3{
+        width: 225px;
+        height: auto;
+    }
+    /* Branches page */
+    .header-branches{
+        height: 35vh;
+    }
+    /* branch page table */
+    .branch-table-area{
+        background-color:#b3f9df;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        text-align: center;
+        margin: 10px;
+    }
+    .double-underline p{
+        text-decoration: underline;
+    }
+    .branch-table{
+        margin: 10px;
+        color:#0a3329;
+    }
+    .branch-table thead tr th{
+        font-size: x-small;
+        padding:5px;
+    }
+    .branch-table tbody tr th{
+        font-size: x-small;
+        padding: 5px;
+    }
+    .branch-table tfoot tr th{
+        font-size: x-small;
+        padding: 5px;
+    }
+    table{
+        width: 10px;
+        box-shadow: -1px 12px 12px -6px rgba(19, 119, 79, 0.5);
+    }
+    table, td, th{
+        padding: 10px;
+        border: 1px solid rgb(0, 0, 0);
+        border-collapse: collapse;
+        text-align: center;
+        cursor: pointer;
+    }
+    td{
+        font-size: 10px;
+    }
+    /* Restaurant page */
+    /* restaurant page header */
+    .header-restaurant{
+        height: 35vh;
+    }
+    /* event navigation in restaurant page */
+    .event-navi{
+        display: flex;
+        flex-direction: row;
+        font-size: x-small;
+        text-align: center;
+        background-color:#0b4f33;
+        height: 10px;
+        margin: 0px;
+    }
+    .ctn-2{
+        font-size: small;
+        padding-bottom: 30px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: -20px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    /* restaurant page content area */
+    .rest-content,.row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .event-img1,.event-img2,.restaurant-img1,.restaurant-img2,.restaurant-img3{
+        width: 225px;
+        height: auto;
+    }
+    .rest-content div p{
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+    /* Adventure page */
+    /* header */
+    .header-adventure{
+        height: 35vh;
+    }
+    /* content area */
+    .adventure-cont-1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .adventure-cont-2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .adventure-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .adventure-img1{
+        width: 225px;
+        height: auto;
+    }
+    .adventure-img2{
+        width: 225px;
+        height: auto;
+    }
+    .adventure-text-1{
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /* Booking page */
+    /* booking page header */
+    .booking-bg{
+        width: auto;
+        height: 90vh;   
+        background-color: #b3f9df;
+        margin-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 0px;
+        padding-top: 100px;
+    }
+    /*booking rooms & suits*/
+    /* Room booking header */
+    .header-booking-1{
+        width: 100vw;
+        height: 40vh;
+        background-image: url(../images/booking.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .header-booking-1-content{
+        margin-bottom: 5px;
+        color: whitesmoke;
+        text-align: center;
+    }
+    .header-booking-1-content h1{
+        font-family: georgia;
+        font-size: 3vmin;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    /* booking adventures */
+    /* adventure booking heading */
+    .header-booking-2{
+        width: 100vw;
+        height: 30vh;
+        background-image: url(../images/advencture-booking.jpeg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .header-booking-2-content{
+        margin-bottom: 5px;
+        color: whitesmoke;
+        text-align: center;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 10px;
+    }
+    .header-booking-2-content h1{
+        font-family: georgia;
+        font-size: 3vmin;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    /* Booking page form globle */
+    .form-bg{
+        background-color:#b3f9df;
+        align-items: center;
+        margin-top: -100px;
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-bottom: 30px;
+        padding-top: 50px;
+        padding-right: 0px; 
+        padding-bottom: 30px;
+        padding-left: 0px;
+    }
+    .form-bg:hover{
+        background-color: #bdffe6;    
+    }
+    .form-bg h1{
+        text-align: center;
+        font-size: larger;
+        margin: 5px;
+    }
+    .form-bg form{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 20px;
+        text-align: center;
+        font-size: x-small;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .form-info{
+        font-size: medium;
+        display: grid;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+    }
+    .form-bg {
+        text-align: center;
+    }
+    .form-info input{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    /* Globle */
+    /*footer */
+    .footerinfo{
+        width: auto;
+        height: auto;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns:min-content;
+        grid-row:auto;
+        padding: 10px;
+    }
+    .flogo{
+        width: 100px;
+        height: auto;
+        margin-left: -5px;
+        margin-right: -10px;
+    }
+    .fname{
+        font-size:small;
+        margin: 4px;
+    }
+    .term-condition{
+        font-size:x-small;
+        margin: 4px;
+    }
+    .info{
+        font-size:x-small;
+        margin: 4px;
+    }
+    .footerc{
+        font-size: x-small;
+    }
+}
