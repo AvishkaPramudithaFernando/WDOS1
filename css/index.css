@@ -1216,7 +1216,7 @@ form input[type="checkbox"]{
         padding-top: 30px;
     }
     .User-details::-webkit-scrollbar{
-        width: 0;
+        width: 2px;
     }
     .header-booking-1-content h1, .header-booking-2-content h1 {
         font-size: 18px;
