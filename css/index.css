@@ -707,9 +707,12 @@ tr:nth-child(even):hover{
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 0px;
-    padding-top: 100px;
+    padding-top: 60px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
-/*booking rooms & suits*/
+/*booking rooms & suits area header*/
 .header-booking-1{
     width: 100vw;
     height: 30vh;
@@ -731,7 +734,168 @@ tr:nth-child(even):hover{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-/* booking adventures */
+/*these use for both hotel room and adventure booking*/
+.container:hover{
+    background-color: #b3f9df;
+}
+.form-bg{
+    display:flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #88fdd2;
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(14, 74, 48, 0.1);
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 220px;
+    background: linear-gradient(#37773e,#88fdd2);
+
+}
+.container form .User-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .User-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100%/2 - 20px);
+}
+.User-details .input-box .details{
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.User-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.User-details .input-box input:focus,
+.User-details .input-box input:valid{
+    border-color: #145646;
+}
+.choose{
+    font-size: 20px;
+}
+/* only for hotel room booking  */
+form .Extra-details .Extre-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+form .Extra-details .category{
+    display:flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+.Extra-details .category label{
+    display: flex;
+    align-items: center;
+}
+.Extra-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #fffdfd;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 25px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three,
+#dot-4:checked ~ .category label .four{
+    border-color: #fffdfd;
+    background: #145646;
+    cursor: pointer;
+}
+form input[type="radio"]{
+    display: none;
+}
+/*Both room and adventure booking*/
+form .Button{
+    height: 45px;
+    margin: 20px 0;
+    margin-bottom: 10px;
+    border-radius: 20%;
+}
+form .Button input{
+    height: 100%;
+    width: 100%;
+    font-size: medium;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background: #218961;
+    cursor: pointer;
+}
+.Button input:hover{
+    color: #145646;
+    background-color:#79c4a8;
+} 
+/* current booking section for both room and adventure booking */
+.currentBooking{
+    font-size: 18px;
+}
+#bookingDetails {
+    background-color: #88fdd2;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(14, 74, 48, 0.1);
+    max-width: 600px;
+    width: 600px;
+    text-align:left;
+}
+
+#bookingDetails:hover{
+    background-color: #b3f9df; 
+}
+
+#currentBooking, #overallBooking {
+    margin-bottom: 20px;
+}
+
+#currentBooking h3, #overallBooking h3 {
+    color: #19311c; 
+}
+
+#currentBooking p, #overallBooking p {
+    margin: 8px 0;
+}
+
+#currentBooking span, #overallBooking span {
+    font-weight: bold;
+}
+/* booking adventures header */
 .header-booking-2{
     width: 100vw;
     height: 30vh;
@@ -754,41 +918,64 @@ tr:nth-child(even):hover{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-/* forms background area */
-.form-bg{
-    background-color:#b3f9df;
-    margin-top: -100px;
-    margin-right: 100px;
-    margin-left: 100px;
-    margin-bottom: 30px;
-    padding-top: 50px;
-    padding-right: 100px; 
-    padding-bottom: 50px;
-    padding-left: 100px;
-    text-align: center;
+/* Adventure booking form */
+form .guide-details .Guide-title{
+    font-size: 20px;
+    font-weight: 500;
 }
-.form-bg:hover{
-    background-color: #bdffe6;    
+form .guide-details .g-category{
+    display:flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
 }
-.form-bg h1{
-    text-align: center;
-    font-size: xx-large;
-    margin: 5px;
-}
-.form-bg form{
+.guide-details .g-category label{
     display: flex;
-    padding-top: 20px;
-    text-align: left;
-    font-size: larger;
-    padding-left: 180px;
-    padding-right: 180px;
+    align-items: center;
 }
-.form-info{
-    font-size: larger;
-    display: grid;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-bottom: 40px;
+.guide-details .g-category .check{
+    height: 18px;
+    width: 18px;
+    background: #fffdfd;
+    border-radius: 20%;
+    margin-right: 10px;
+    margin-left: 25px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+#check-1:checked ~ .g-category label .one,
+#check-2:checked ~ .g-category label .two{
+    border-color: #fffdfd;
+    background: #145646;
+    cursor: pointer;
+}
+form input[type="checkbox"]{
+    display: none;
+}
+/* Overall cost area*/
+.overall-cost {
+  margin-top: 20px;
+  font-weight: bold;
+}
+.overall-cost {
+  margin-top: 10px;
+}
+.additional-options {
+  margin-top: 20px;
+  text-align: center;
+}
+.additional-options button {
+  background-color: #306937;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.additional-options button:hover {
+  background-color: #215d30;
 }
 /* Global */
 /* Footer styles */
@@ -1022,111 +1209,59 @@ tr:nth-child(even):hover{
         padding-right: 10px;
     }
     /* Booking page */
-    /* booking page header */
-    .booking-bg{
-        width: auto;
-        height: 90vh;   
-        background-color: #b3f9df;
-        margin-bottom: 30px;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 0px;
-        padding-top: 100px;
+    /*Booking page responsive room and adventure both*/
+    .booking-bg {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-top: 30px;
     }
-    /*booking rooms & suits*/
-    /* Room booking header */
-    .header-booking-1{
-        width: 100vw;
-        height: 40vh;
-        background-image: url(../images/booking.jpg);
-        background-position: center;
-        background-size: cover;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
+    .User-details::-webkit-scrollbar{
+        width: 4;
     }
-    .header-booking-1-content{
-        margin-bottom: 5px;
-        color: whitesmoke;
-        text-align: center;
-    }
-    .header-booking-1-content h1{
-        font-family: georgia;
-        font-size: 3vmin;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    /* booking adventures */
-    /* adventure booking heading */
-    .header-booking-2{
-        width: 100vw;
-        height: 30vh;
-        background-image: url(../images/advencture-booking.jpeg);
-        background-position: center;
-        background-size: cover;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-    }
-    .header-booking-2-content{
-        margin-bottom: 5px;
-        color: whitesmoke;
-        text-align: center;
-        margin-right: 0px;
-        margin-left: 0px;
-        padding: 10px;
-    }
-    .header-booking-2-content h1{
-        font-family: georgia;
-        font-size: 3vmin;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    /* Booking page form globle */
-    .form-bg{
-        background-color:#b3f9df;
-        align-items: center;
-        margin-top: -100px;
-        margin-right: 5px;
-        margin-left: 5px;
-        margin-bottom: 30px;
-        padding-top: 50px;
-        padding-right: 0px; 
-        padding-bottom: 30px;
-        padding-left: 0px;
-    }
-    .form-bg:hover{
-        background-color: #bdffe6;    
-    }
-    .form-bg h1{
-        text-align: center;
-        font-size: larger;
-        margin: 5px;
-    }
-    .form-bg form{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        align-items: center;
-        padding-top: 20px;
-        text-align: center;
-        font-size: x-small;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    .form-info{
-        font-size: medium;
-        display: grid;
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-bottom: 20px;
+    .header-booking-1-content h1, .header-booking-2-content h1 {
+        font-size: 18px;
     }
     .form-bg {
-        text-align: center;
+        flex-direction: column;
     }
-    .form-info input{
-        margin-top: 10px;
-        margin-bottom: 10px;
+    .User-details .input-box {
+        width: 100%;
+    }
+    .container {
+        max-width: 100%;
+    }
+    form .User-details.input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .Extra-details .category{
+        width: 100%;
+    }
+    .container form .User-details{
+        max-height: 350px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .User-details .input-box input{
+        font-size: 14px;
+    }
+    #bookingDetails{
+        max-width: 100%;
+    }
+    /* In room booking radio button responive */
+    .Extra-details .category, .guide-details .g-category {
+        width: 100%;
+    }
+    form .Extra-details .category {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .Extra-details .category label {
+        width: 50%; 
+        box-sizing: border-box;
+    }
+    .Extra-details .category .dot {
+        margin-left: 0;
     }
     /* Globle */
     /*footer */
