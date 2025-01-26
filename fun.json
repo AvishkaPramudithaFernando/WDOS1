@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Water Slide",
+        "description": "Exciting slides with splashes of water.",
+        "imagePath": "assets/images/fun1.jpg",
+        "details": "Enjoy thrilling water slides with different levels of difficulty."
+    },
+    {
+        "title": "Family Activity",
+        "description": "Fun activities for the whole family.",
+        "imagePath": "assets/images/fun2.jpg",
+        "details": "Engage in fun games and activities suitable for all ages."
+    },
+    {
+        "title": "Jumping Tent",
+        "description": "Bouncy fun for kids and adults.",
+        "imagePath": "assets/images/fun3.jpg",
+        "details": "Jump and bounce in our large inflatable tents."
+    },
+    {
+        "title": "Water Boat",
+        "description": "A relaxing and fun water boating experience.",
+        "imagePath": "assets/images/fun4.jpg",
+        "details": "Paddle through calm waters and enjoy the scenery."
+    },
+    {
+        "title": "Scary Robe",
+        "description": "Slide from one tree to another.",
+        "imagePath": "assets/images/fun5.jpg",
+        "details": "Feel the adrenaline rush while sliding across trees."
+    },
+    {
+        "title": "Wood Bridge",
+        "description": "Test your balance on our wooden bridge.",
+        "imagePath": "assets/images/fun6.jpg",
+        "details": "Cross the wooden bridge carefully and enjoy the challenge."
+    },
+    {
+        "title": "Camp Hour",
+        "description": "Fun and engaging campfire activities.",
+        "imagePath": "assets/images/fun7.jpg",
+        "details": "Enjoy storytelling and fun activities around the campfire."
+    },
+    {
+        "title": "Fun with Mud",
+        "description": "Get messy and have fun with mud activities.",
+        "imagePath": "assets/images/fun8.jpeg",
+        "details": "Participate in muddy fun challenges with friends."
+    },
+    {
+        "title": "Air Slides",
+        "description": "Slide through inflatable air slides.",
+        "imagePath": "assets/images/fun9.jpg",
+        "details": "Experience high jumps and bouncy fun."
+    },
+    {
+        "title": "Boxing Range",
+        "description": "Test your boxing skills in a fun way.",
+        "imagePath": "assets/images/fun10.jpg",
+        "details": "Enjoy friendly boxing matches in a safe environment."
+    },
+    {
+        "title": "Halloween Event",
+        "description": "Spooky and fun-filled Halloween experiences.",
+        "imagePath": "assets/images/fun11.jpg",
+        "details": "Celebrate Halloween with themed activities and decorations."
+    },
+    {
+        "title": "Shooting Range",
+        "description": "Test your aiming skills in a safe environment.",
+        "imagePath": "assets/images/fun12.jpg",
+        "details": "Try your hand at different shooting challenges."
+    }
+]
