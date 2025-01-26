@@ -1,74 +1,74 @@
 [
     {
-        "title": "Rotating Circle",
-        "description": "A thrilling ride that spins in circles.",
-        "imagePath": "assets/images/ride12.jpg",
-        "details": "Experience the dizzying fun of spinning in circles. Operating hours: 10:00 AM - 7:00 PM. Ticket cost: Child - $4, Adult - $8, Family Pack - $20."
+        "title": "Shooting Range",
+        "description": "Test your aiming skills in a safe environment.",
+        "imagePath": "assets/images/fun12.jpg",
+        "details": "Try your hand at different shooting challenges."
     },
     {
-        "title": "Rotating Car Ride",
-        "description": "A fun-filled car ride with rotations and spins.",
-        "imagePath": "assets/images/ride11.jpg",
-        "details": "Spin and twirl on this exciting car ride. Operating hours: 9:00 AM - 9:00 PM. Ticket cost: Child - $5, Adult - $10, Family Pack - $25."
+        "title": "Halloween Event",
+        "description": "Spooky and fun-filled Halloween experiences.",
+        "imagePath": "assets/images/fun11.jpg",
+        "details": "Celebrate Halloween with themed activities and decorations."
     },
     {
-        "title": "Horse Back Ride",
-        "description": "A calm and scenic horse riding experience.",
-        "imagePath": "assets/images/ride10.jpg",
-        "details": "Enjoy a relaxing horseback ride through scenic trails. Operating hours: 8:00 AM - 5:00 PM. Ticket cost: Child - $6, Adult - $12, Family Pack - $30."
+        "title": "Boxing Range",
+        "description": "Test your boxing skills in a fun way.",
+        "imagePath": "assets/images/fun10.jpg",
+        "details": "Enjoy friendly boxing matches in a safe environment."
     },
     {
-        "title": "Green Car Roller Coaster",
-        "description": "A roller coaster designed with eco-friendly concepts.",
-        "imagePath": "assets/images/ride9.jpg",
-        "details": "Experience a smooth ride with a green theme. Operating hours: 10:00 AM - 8:00 PM. Ticket cost: Child - $7, Adult - $14, Family Pack - $35."
+        "title": "Air Slides",
+        "description": "Slide through inflatable air slides.",
+        "imagePath": "assets/images/fun9.jpg",
+        "details": "Experience high jumps and bouncy fun."
     },
     {
-        "title": "Monkey Roller Coaster",
-        "description": "A jungle-themed roller coaster adventure.",
-        "imagePath": "assets/images/ride8.jpg",
-        "details": "Swing through the jungle with twists and turns. Operating hours: 9:00 AM - 6:00 PM. Ticket cost: Child - $5, Adult - $10, Family Pack - $25."
+        "title": "Fun with Mud",
+        "description": "Get messy and have fun with mud activities.",
+        "imagePath": "assets/images/fun8.jpeg",
+        "details": "Participate in muddy fun challenges with friends."
     },
     {
-        "title": "Sky Jet",
-        "description": "An adrenaline-pumping jet ride in the sky.",
-        "imagePath": "assets/images/ride7.jpg",
-        "details": "Feel the thrill of speed and altitude on this sky-high jet ride. Operating hours: 11:00 AM - 8:00 PM. Ticket cost: Child - $9, Adult - $18, Family Pack - $45."
+        "title": "Camp Hour",
+        "description": "Fun and engaging campfire activities.",
+        "imagePath": "assets/images/fun7.jpg",
+        "details": "Enjoy storytelling and fun activities around the campfire."
     },
     {
-        "title": "Dragon Train",
-        "description": "A thrilling train ride through dragon-themed landscapes.",
-        "imagePath": "assets/images/ride6.jpg",
-        "details": "Ride through fire-breathing dragons and exciting tunnels. Operating hours: 10:00 AM - 9:00 PM. Ticket cost: Child - $8, Adult - $16, Family Pack - $40."
+        "title": "Wood Bridge",
+        "description": "Test your balance on our wooden bridge.",
+        "imagePath": "assets/images/fun6.jpg",
+        "details": "Cross the wooden bridge carefully and enjoy the challenge."
     },
     {
-        "title": "Water Ride",
-        "description": "A fun-filled water adventure ride.",
-        "imagePath": "assets/images/ride5.jpg",
-        "details": "Enjoy splashes and waves on this exciting water ride. Operating hours: 9:00 AM - 7:00 PM. Ticket cost: Child - $6, Adult - $12, Family Pack - $30."
+        "title": "Scary Robe",
+        "description": "Slide from one tree to another.",
+        "imagePath": "assets/images/fun5.jpg",
+        "details": "Feel the adrenaline rush while sliding across trees."
     },
     {
-        "title": "Water Park Slides",
-        "description": "Exciting water slides for all age groups.",
-        "imagePath": "assets/images/ride4.jpg",
-        "details": "Multiple slides with different heights and speeds. Operating hours: 10:00 AM - 6:00 PM. Ticket cost: Child - $7, Adult - $15, Family Pack - $35."
+        "title": "Water Boat",
+        "description": "A relaxing and fun water boating experience.",
+        "imagePath": "assets/images/fun4.jpg",
+        "details": "Paddle through calm waters and enjoy the scenery."
     },
     {
-        "title": "Roll Roller Coaster",
-        "description": "An exciting roller coaster with rolling features.",
-        "imagePath": "assets/images/ride3.jpg",
-        "details": "A unique roller coaster that rolls along twists and turns. Operating hours: 11:00 AM - 9:00 PM. Ticket cost: Child - $6, Adult - $12, Family Pack - $30."
+        "title": "Jumping Tent",
+        "description": "Bouncy fun for kids and adults.",
+        "imagePath": "assets/images/fun3.jpg",
+        "details": "Jump and bounce in our large inflatable tents."
     },
     {
-        "title": "Rotating Wheel in Sky",
-        "description": "A rotating wheel that offers breathtaking views from the sky.",
-        "imagePath": "assets/images/ride2.jpg",
-        "details": "Experience a 360-degree view while enjoying the slow rotation. Operating hours: 9:00 AM - 7:00 PM. Ticket cost: Child - $4, Adult - $8, Family Pack - $20."
+        "title": "Family Activity",
+        "description": "Fun activities for the whole family.",
+        "imagePath": "assets/images/fun2.jpg",
+        "details": "Engage in fun games and activities suitable for all ages."
     },
     {
-        "title": "Roller Coaster",
-        "description": "A fast and thrilling roller coaster ride.",
-        "imagePath": "assets/images/ride1.jpg",
-        "details": "This is a high-speed roller coaster with loops and sharp turns. Operating hours: 10:00 AM - 8:00 PM. Ticket cost: Child - $5, Adult - $10, Family Pack - $25."
+        "title": "Water Slide",
+        "description": "Exciting slides with splashes of water.",
+        "imagePath": "assets/images/fun1.jpg",
+        "details": "Enjoy thrilling water slides with different levels of difficulty."
     }
 ]
